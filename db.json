@@ -1,0 +1,52 @@
+{
+  "restaurants": [
+    {
+      "name": "Supara",
+      "address": "Karagul A. 326",
+      "email": "ethnosupara@gmail.com",
+      "id": 7
+    },
+    {
+      "name": "Dubrovski",
+      "address": "Isakeeva 159",
+      "email": "restodubrovski@gmail.com",
+      "id": 8
+    },
+    {
+      "name": "La Maison",
+      "address": "Matrosova 67/4",
+      "email": "restomaison@gmai.com",
+      "id": 9
+    },
+    {
+      "name": "Imperator",
+      "address": "Ibragimova 146 A",
+      "email": "restoimperator@gmail.com",
+      "id": 10
+    },
+    {
+      "name": "Navat",
+      "address": "Kievskaya 114/1",
+      "email": "navat@gmail.com",
+      "id": 11
+    },
+    {
+      "name": "Talisman",
+      "address": "Suho Bator 5/6",
+      "email": "talisman@gmail.com",
+      "id": 12
+    },
+    {
+      "name": "Djanbolotov",
+      "address": "Almatinka 116",
+      "email": "djanbolotov@gmail.com",
+      "id": 13
+    },
+    {
+      "name": "Islam",
+      "address": "Isanova 344",
+      "email": "iosmonbekov@gmail.com",
+      "id": 14
+    }
+  ]
+}
