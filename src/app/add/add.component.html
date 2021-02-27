@@ -1,0 +1,27 @@
+
+<h1>ADD A NEW RESTAURANT</h1>
+
+    <div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+       <strong>Success!</strong> Your restaurant is successfuly entered.
+       <button (click)="alertX()" routerLink="" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <form [formGroup]="addResto" (ngSubmit)="newRest()">
+        <div class="form-group">
+            <label>Name</label>
+            <input class="form-control" type="name" placeholder="Enter Name" formControlName="name">
+            <span class="error" *ngIf="name.invalid && name.touched">Name is invalid</span>
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input class="form-control" email type="text" placeholder="Enter email" formControlName="email">
+            <span class="error" *ngIf="email.invalid && email.touched">Email is invalid</span>
+        </div>
+        <div class="form-group">
+            <label>Address</label>
+            <input class="form-control" type="text" placeholder="Enter address" formControlName="address">
+            <span class="error" *ngIf="address.invalid && address.touched">Address is invalid</span>
+        </div>
+        <br>
+        <button [disabled]='addResto.invalid' type="submit" class="btn btn-primary">Submit</button>
+    </form>

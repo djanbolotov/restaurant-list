@@ -1,0 +1,23 @@
+<h1>THERE IS LIST OF RESTAURANTS</h1>
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name of restaurant</th>
+        <th scope="col">Address</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of list; let i = index">
+        <th>{{i}}</th>
+        <td>{{item.name}}</td>
+        <td>{{item.address}}</td>
+        <td>{{item.email}}</td>
+        <td><button class="btn btn-danger" (click)="removeID(item.id)">remove</button></td>
+        <td><button class="btn btn-success" routerLink="/update/{{item.id}}">update</button></td>
+      </tr>
+    </tbody>
+</table>
